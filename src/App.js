@@ -1,7 +1,6 @@
 
 import React from 'react';
 import Calendar from 'react-calendar';
-import BryntumScheduler from './Components/BryntumScheduler';
 import GroupInfo from './Components/GroupInfo';
 import OpenGroupForm from './Components/OpenGroupForm';
 
@@ -17,6 +16,7 @@ class App extends React.Component {
       date: new Date(),
       show:false,
       showhours:false,
+      courseName:"",
       courses:["לוגיקה ותורת הקבוצות","אלגברה","חדווא 1","מבוא למדעי המחשב"]
     }
   }
@@ -43,7 +43,7 @@ render(){
 <h1>Choose day please</h1>
 
 var buttons = this.state.courses.map(
-  (name,x)=><Button key={x} className='m-3'  onClick={()=>this.setState({show:true})}>{name}</Button>)
+  (name,x)=><Button key={x} className='m-3'  onClick={()=>this.setState({show:true,courseName:name})}>{name}</Button>)
 
   const x = this.state.show?  <div>  
                               <Calendar
@@ -62,7 +62,7 @@ var buttons = this.state.courses.map(
 
   return (
     <main>
-      <OpenGroupForm></OpenGroupForm>
+      <OpenGroupForm courseName={this.state.courseName} date={this.state.date}></OpenGroupForm>
 
 
         <img src={logo} className='center' alt="Zoomate" ></img>
