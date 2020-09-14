@@ -6,28 +6,44 @@ import Button from 'react-bootstrap/Button';
 class OpenGroupForm extends React.Component {
     constructor(props){
       super(props);
-      this.state={groupLeader:"",
-
+      this.state={
+        maxNum:1,
+        groupSize:1,
+        groupLeader:"",
+        zoomLink:"",
+        groupLeader:"",
+        courseName:"",
+        date:new Date(),
+        time:""
       }
+    }
+
+    maxChange = (event)=>{
+      this.setState({maxNum:event.target.value})
     }
     leaderChange = (event)=>{
       this.setState({groupLeader:event.target.value})
     }
     zoomLinkChange = (event)=>{
-      this.setState({zoomLinkChange:event.target.value})
+      this.setState({zoomLink:event.target.value})
     }
     groupDescriptionChange = (event)=>{
       this.setState({groupLeader:event.target.value})
     }
     courseNameChange = (event)=>{
-      this.setState({zoomLinkChange:event.target.value})
+      this.setState({courseName:event.target.value})
     }
     dateChange = (event)=>{
-      this.setState({zoomLinkChange:event.target.value})
+      this.setState({date:event.target.value})
     }
     timeChange = (event)=>{
-      this.setState({zoomLinkChange:event.target.value})
+      this.setState({time:event.target.value})
     }
+    submitFunc=()=>{this.props.setNewRow(this.state.maxNum,this.state.groupLeader,this.state.courseName,this.state.groupDescription,
+      this.state.zoomLink,this.state.date,this.state.time)
+      console.log("here")
+    }
+
     render(){
             
         return <Form>
@@ -67,8 +83,18 @@ class OpenGroupForm extends React.Component {
             </Form.Control>
           </Form.Group>
         </Form.Row>
+
+        <Form.Row>
+
+        <Form.Group controlId="Max participants">
+          <Form.Label>Max participants</Form.Label>
+          <Form.Control placeholder="99" onChange={this.maxChange} />
+         </Form.Group>
+
+  
+          </Form.Row>
             
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" onClick={this.submitFunc}>
           Submit
         </Button>
       </Form>
