@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/hackBguClient/static/css/main.38502d14.chunk.css",
+    "main.js": "/hackBguClient/static/js/main.0489bf5c.chunk.js",
+    "main.js.map": "/hackBguClient/static/js/main.0489bf5c.chunk.js.map",
+    "runtime-main.js": "/hackBguClient/static/js/runtime-main.9e045d65.js",
+    "runtime-main.js.map": "/hackBguClient/static/js/runtime-main.9e045d65.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/hackBguClient/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.53e42850.chunk.js": "/hackBguClient/static/js/2.53e42850.chunk.js",
+    "static/js/2.53e42850.chunk.js.map": "/hackBguClient/static/js/2.53e42850.chunk.js.map",
+    "index.html": "/hackBguClient/index.html",
+    "precache-manifest.e160de788c93e416f41645070bfe128c.js": "/hackBguClient/precache-manifest.e160de788c93e416f41645070bfe128c.js",
+    "service-worker.js": "/hackBguClient/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/hackBguClient/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.38502d14.chunk.css.map": "/hackBguClient/static/css/main.38502d14.chunk.css.map",
+    "static/js/2.53e42850.chunk.js.LICENSE.txt": "/hackBguClient/static/js/2.53e42850.chunk.js.LICENSE.txt",
+    "static/media/zoomate.jpeg": "/hackBguClient/static/media/zoomate.e431bd55.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e045d65.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.53e42850.chunk.js",
+    "static/css/main.38502d14.chunk.css",
+    "static/js/main.0489bf5c.chunk.js"
+  ]
+}
