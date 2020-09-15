@@ -6,7 +6,7 @@ import OpenGroupForm from './Components/OpenGroupForm';
 
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './zoomate.jpeg';
+import logo from './newim.jpeg';
 import './App.css';
 
 class App extends React.Component {
@@ -20,7 +20,8 @@ class App extends React.Component {
       showForm:false,
       courseName:"",
       courses:["לוגיקה ותורת הקבוצות","אלגברה","חדווא 1","מבוא למדעי המחשב"],
-      rows:[]
+      rows:[],
+      about:false,
     }
   }
   
@@ -70,6 +71,7 @@ var buttons = this.state.courses.map(
 
   const x = this.state.show?  <main>
     <h5 className="choice-text">{chooseText}</h5>
+    <div>
                               <Calendar
                             className="c1"
                             onChange={this.onChange}
@@ -78,20 +80,16 @@ var buttons = this.state.courses.map(
                             onClickDay={()=>{this.setState({showhours:true})}}
                             />
                             {showH}
-                            <div>
-                            <Button className="text-center mu-5" onClick={()=>this.setState({show:false, showhours:false , showForm:false})}>back</Button>
                             </div>
+                            <Button className="button-center mu-5" onClick={()=>this.setState({show:false, showhours:false , showForm:false})}>back</Button>
+                            
                             </main> 
                             : <div>
                             {buttons}
                               </div>;
 
   return (
-    <main style={{
-      backgroundColor: 'white',
-
-    }}>
-      
+    <main className='app'>
 
 
       <img src={logo} className='logo' alt="Zoomate" ></img>
