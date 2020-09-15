@@ -49,6 +49,11 @@ class OpenGroupForm extends React.Component {
         return <Form  className onSubmit={(event)=>{event.preventDefault()}}>
         <Form.Row>
 
+        <Form.Group controlId="CourseName">
+          <Form.Label>Course Name</Form.Label>
+          <Form.Control value={this.props.courseName} disabled onChange={this.courseNameChange}/>
+        </Form.Group> 
+
         <Form.Group controlId="GroupLeader">
           <Form.Label>Group Leader</Form.Label>
           <Form.Control placeholder="Israel Israeli" onChange={this.leaderChange} />
@@ -59,11 +64,6 @@ class OpenGroupForm extends React.Component {
             <Form.Control type="link" placeholder="Enter URL" onChange={this.zoomLinkChange} />
           </Form.Group>
       
-          <Form.Group controlId="CourseName">
-          <Form.Label>Course Name</Form.Label>
-          <Form.Control value={this.props.courseName} disabled onChange={this.courseNameChange}/>
-        </Form.Group> 
-       
         </Form.Row>
             
       

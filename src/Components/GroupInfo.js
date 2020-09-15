@@ -12,12 +12,13 @@ class GroupInfo extends React.Component {
         var groups = this.props.groups.map(
             (group,x)=>{
                 var color = group.groupSize < group.maxNum? 'success' : 'danger'
+                var to_absolute = group.zoomUrl.startsWith("http")?group.zoomUrl:"http://"+group.zoomUrl
                 return <tr key={x}>
                 <td>{group.id}</td>
                 <td>{group.groupLeader}</td>
                 <td>{group.startTime}</td>
                 <td>{group.Description}</td>
-                <td>{group.zoomUrl}</td>
+                <td><a href={to_absolute} target="_blank">{group.zoomUrl}</a></td>
                 <td><Button variant={color} disabled={group.groupSize >= group.maxNum}>click here</Button></td>
               </tr>
             }
