@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aae4a4f1bc8fc645241be76fe2854cd9",
+    "revision": "bb081b3f199f4c70f1cbda9cff8a2a3e",
     "url": "/hackBguClient/index.html"
   },
   {
-    "revision": "ffd360adb507d0c080cc",
+    "revision": "f4f09f4ddd370d3c4755",
     "url": "/hackBguClient/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "ee1cb71707dbfec60efd",
-    "url": "/hackBguClient/static/css/main.877140bb.chunk.css"
+    "revision": "a801a5e2f92aa03fee17",
+    "url": "/hackBguClient/static/css/main.ea895e65.chunk.css"
   },
   {
-    "revision": "ffd360adb507d0c080cc",
-    "url": "/hackBguClient/static/js/2.4a816e7f.chunk.js"
+    "revision": "f4f09f4ddd370d3c4755",
+    "url": "/hackBguClient/static/js/2.0ae67e57.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/hackBguClient/static/js/2.4a816e7f.chunk.js.LICENSE.txt"
+    "url": "/hackBguClient/static/js/2.0ae67e57.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ee1cb71707dbfec60efd",
-    "url": "/hackBguClient/static/js/main.610f1863.chunk.js"
+    "revision": "a801a5e2f92aa03fee17",
+    "url": "/hackBguClient/static/js/main.06bc3ed8.chunk.js"
   },
   {
     "revision": "973bf06556da2ca2788e",
