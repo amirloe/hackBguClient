@@ -33,7 +33,17 @@ class App extends React.Component {
 
 //3. render the scheduler component, mind that the Scheduler component should be placed in a DragDropContext(father or ancestor).
 setNewRow=(maxNum,groupLeader,courseName,groupDescription,zoomLink,date,time)=>{
-  var row={id:this.state.id,maxNum:maxNum,groupSize:1,groupLeader:groupLeader,courseName:courseName,Description:groupDescription,startTime:time,date:date,zoomUrl:zoomLink}
+  var row={id:this.state.id,
+          maxNum:maxNum,
+          groupSize:1,
+          groupLeader:groupLeader,
+          courseName:courseName,
+          Description:groupDescription,
+          startTime:time,
+          date:date,
+          zoomUrl:zoomLink}
+
+ console.log(row.startTime)
   var newRow=this.state.rows.concat(row)
   alert("Group created!")
    this.setState({rows:newRow,id:this.state.id+1})
@@ -45,7 +55,7 @@ render(){
   const showH =this.state.showhours?
   <div className='mu-2'>
 
-  <GroupInfo groups={this.state.rows.filter((x)=>(x.date===this.state.date)&&(x.courseName===this.state.courseName))}></GroupInfo>
+  <GroupInfo groups={this.state.rows.filter((x)=>(x.date.toDateString()===this.state.date.toDateString())&&(x.courseName===this.state.courseName))}></GroupInfo>
   <Button className='m-4' onClick={()=>{this.setState({showhours:false,showForm:true})}}>Open new Group</Button>
   </div>
 : this.state.showForm?

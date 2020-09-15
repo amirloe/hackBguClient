@@ -11,9 +11,9 @@ class OpenGroupForm extends React.Component {
         groupSize:1,
         groupLeader:"",
         zoomLink:"",
-        groupLeader:"",
-        courseName:"",
-        date:new Date(),
+        description:"",
+        courseName:this.props.courseName,
+        date:this.props.date,
         time:""
       }
     }
@@ -28,7 +28,7 @@ class OpenGroupForm extends React.Component {
       this.setState({zoomLink:event.target.value})
     }
     groupDescriptionChange = (event)=>{
-      this.setState({groupLeader:event.target.value})
+      this.setState({description:event.target.value})
     }
     courseNameChange = (event)=>{
       this.setState({courseName:event.target.value})
@@ -68,13 +68,13 @@ class OpenGroupForm extends React.Component {
       
         <Form.Group controlId="CourseName">
           <Form.Label>Course Name</Form.Label>
-          <Form.Control placeholder={this.props.courseName} onChange={this.courseNameChange}/>
+          <Form.Control value={this.props.courseName} disabled onChange={this.courseNameChange}/>
         </Form.Group> 
       
         <Form.Row>
           <Form.Group as={Col} controlId="Date">
             <Form.Label>Date</Form.Label>
-            <Form.Control placeholder={this.props.date} onChange={this.dateChange}/>
+            <Form.Control value={this.props.date.toDateString()} disabled onChange={this.dateChange}/>
           </Form.Group>
       
           <Form.Group as={Col} controlId="MettingStartTime">
