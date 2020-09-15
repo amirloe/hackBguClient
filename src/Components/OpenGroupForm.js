@@ -41,12 +41,12 @@ class OpenGroupForm extends React.Component {
     }
     submitFunc=()=>{this.props.setNewRow(this.state.maxNum,this.state.groupLeader,this.state.courseName,this.state.groupDescription,
       this.state.zoomLink,this.state.date,this.state.time)
-      console.log("here")
+    
     }
 
     render(){
             
-        return <Form>
+        return <Form  className onSubmit={(event)=>{event.preventDefault()}}>
         <Form.Row>
 
         <Form.Group controlId="GroupLeader">
@@ -94,7 +94,7 @@ class OpenGroupForm extends React.Component {
   
           </Form.Row>
             
-        <Button variant="primary" type="submit" onClick={this.submitFunc}>
+        <Button variant="info"  size="sm" type="submit" onClick={this.submitFunc}>
           Submit
         </Button>
       </Form>

@@ -17,6 +17,7 @@ class App extends React.Component {
       date: new Date(),
       show:false,
       showhours:false,
+      showForm:false,
       courseName:"",
       courses:["לוגיקה ותורת הקבוצות","אלגברה","חדווא 1","מבוא למדעי המחשב"],
       rows:[]
@@ -34,8 +35,9 @@ class App extends React.Component {
 setNewRow=(maxNum,groupLeader,courseName,groupDescription,zoomLink,date,time)=>{
   var row={id:this.state.id,maxNum:maxNum,groupSize:1,groupLeader:groupLeader,courseName:courseName,Description:groupDescription,startTime:time,date:date,zoomUrl:zoomLink}
   var newRow=this.state.rows.concat(row)
-  console.log("michal is the queenM")
+  alert("Group created!")
    this.setState({rows:newRow,id:this.state.id+1})
+   this.setState({ showhours:true , showForm:false})
 }
 
 render(){
@@ -43,16 +45,21 @@ render(){
   const showH =this.state.showhours?
   <div className='mu-2'>
 
-  <GroupInfo groups={this.state.rows}></GroupInfo>
-  <Button className='mx-auto'>Open new Group</Button>
+  <GroupInfo groups={this.state.rows.filter((x)=>(x.date===this.state.date)&&(x.courseName===this.state.courseName))}></GroupInfo>
+  <Button className='m-4' onClick={()=>{this.setState({showhours:false,showForm:true})}}>Open new Group</Button>
   </div>
+: this.state.showForm?
+<OpenGroupForm courseName={this.state.courseName} date={this.state.date} setNewRow={this.setNewRow}></OpenGroupForm>
 :
-<h1>Choose day please</h1>
+<h2></h2>
+
+var chooseText = !this.state.showhours && !this.state.showForm ? " Choose your date (pun intended) ;)" : "";
 
 var buttons = this.state.courses.map(
   (name,x)=><Button key={x} className='m-3'  onClick={()=>this.setState({show:true,courseName:name})}>{name}</Button>)
 
-  const x = this.state.show?  <div>  
+  const x = this.state.show?  <main>
+    <h5 className="choice-text">{chooseText}</h5>
                               <Calendar
                             className="c1"
                             onChange={this.onChange}
@@ -61,20 +68,24 @@ var buttons = this.state.courses.map(
                             onClickDay={()=>{this.setState({showhours:true})}}
                             />
                             {showH}
-                          <Button className="text-center" onClick={()=>this.setState({show:false, showhours:false})}>back</Button>
-                            </div> 
+                            <div>
+                            <Button className="text-center mu-5" onClick={()=>this.setState({show:false, showhours:false , showForm:false})}>back</Button>
+                            </div>
+                            </main> 
                             : <div>
                             {buttons}
                               </div>;
 
   return (
-    <main>
-      <OpenGroupForm courseName={this.state.courseName} date={this.state.date} setNewRow={this.setNewRow}></OpenGroupForm>
+    <main style={{
+      backgroundColor: 'white',
+
+    }}>
+      
 
 
-        <img src={logo} className='center' alt="Zoomate" ></img>
+      <img src={logo} className='logo' alt="Zoomate" ></img>
       <div className='center'>
-      <h1>Zoomate 1.0</h1>
       {x}
    </div>
 
