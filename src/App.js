@@ -3,6 +3,7 @@ import React from 'react';
 import Calendar from 'react-calendar';
 import GroupInfo from './Components/GroupInfo';
 import OpenGroupForm from './Components/OpenGroupForm';
+import MyTextbox from './Components/MyTextbox';
 
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -86,10 +87,11 @@ var buttons = this.state.courses.map(
 
       <img src={logo} className='logo' alt="Zoomate" ></img>
       <div className='center'>
+      <MyTextbox className='mytextbox' ></MyTextbox>
       {x}
    </div>
-
     </main>
+    
   );
 
   }

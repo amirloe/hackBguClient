@@ -54,6 +54,16 @@
   size: 10%;
 }
 
+.mytextbox{
+ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align:left;
+    
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -62,3 +72,5 @@
     transform: rotate(360deg);
   }
 }
+
+
