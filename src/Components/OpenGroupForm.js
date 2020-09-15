@@ -39,7 +39,7 @@ class OpenGroupForm extends React.Component {
     timeChange = (event)=>{
       this.setState({time:event.target.value})
     }
-    submitFunc=()=>{this.props.setNewRow(this.state.maxNum,this.state.groupLeader,this.state.courseName,this.state.groupDescription,
+    submitFunc=()=>{this.props.setNewRow(this.state.maxNum,this.state.groupLeader,this.state.courseName,this.state.description,
       this.state.zoomLink,this.state.date,this.state.time)
     
     }

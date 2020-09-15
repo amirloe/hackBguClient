@@ -10,6 +10,9 @@ import logo from './newim.jpeg';
 import './App.css';
 
 class App extends React.Component {
+
+
+  
   constructor(props){
     super(props);
     this.state = {
@@ -20,11 +23,35 @@ class App extends React.Component {
       showForm:false,
       courseName:"",
       courses:["לוגיקה ותורת הקבוצות","אלגברה","חדווא 1","מבוא למדעי המחשב"],
-      rows:[],
+      rows:[
+        {id:69,
+          maxNum:10,
+          groupSize:5,
+          groupLeader:"Sara",
+          courseName:"אלגברה",
+          Description:"תרגיל בית מס 3",
+          startTime:"12:00",
+          date:new Date(2020,8,22),
+          zoomUrl:"www.zoom.com"},
+          {id:70,
+            maxNum:10,
+            groupSize:10,
+            groupLeader:"Michal",
+            courseName:"אלגברה",
+            Description:"תרגיל בית מס 2",
+            startTime:"14:00",
+            date:new Date(2020,8,22),
+            zoomUrl:"www.zoom.com"},
+      ],
       about:false,
     }
+
+    
   }
+
+
   
+ 
 
   onChange = date => {
     let x = new Date(new Date(date).setHours(6));
@@ -44,7 +71,7 @@ setNewRow=(maxNum,groupLeader,courseName,groupDescription,zoomLink,date,time)=>{
           date:date,
           zoomUrl:zoomLink}
 
- console.log(row.startTime)
+ console.log(row.Description)
   var newRow=this.state.rows.concat(row)
   alert("Group created!")
    this.setState({rows:newRow,id:this.state.id+1})
