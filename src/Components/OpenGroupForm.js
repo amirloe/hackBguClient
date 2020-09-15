@@ -59,17 +59,19 @@ class OpenGroupForm extends React.Component {
             <Form.Control type="link" placeholder="Enter URL" onChange={this.zoomLinkChange} />
           </Form.Group>
       
-          <Form.Group as={Col} controlId="GroupDescription">
-            <Form.Label>Group description</Form.Label>
-            <Form.Control type="text" placeholder="what's your group goal? " onChange={this.groupDescriptionChange} />
-          </Form.Group>
-        </Form.Row>
-            
-      
-        <Form.Group controlId="CourseName">
+          <Form.Group controlId="CourseName">
           <Form.Label>Course Name</Form.Label>
           <Form.Control value={this.props.courseName} disabled onChange={this.courseNameChange}/>
         </Form.Group> 
+       
+        </Form.Row>
+            
+      
+        <Form.Group as={Col} controlId="GroupDescription">
+            <Form.Label>Group description</Form.Label>
+            <Form.Control type="text" placeholder="what's your group goal? " onChange={this.groupDescriptionChange} />
+          </Form.Group>
+
       
         <Form.Row>
           <Form.Group as={Col} controlId="Date">

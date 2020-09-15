@@ -69,6 +69,7 @@ var buttons = this.state.courses.map(
   (name,x)=><Button key={x} className='m-3'  onClick={()=>this.setState({show:true,courseName:name})}>{name}</Button>)
 
   const x = this.state.show?  <main>
+   <h1 style={{color:'blue',textAlign:'right'}}>{this.state.courseName}</h1>
     <h5 className="choice-text">{chooseText}</h5>
                               <Calendar
                             className="c1"
