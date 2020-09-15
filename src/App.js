@@ -6,7 +6,7 @@ import OpenGroupForm from './Components/OpenGroupForm';
 
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './newim.jpeg';
+import logo from './zoomate.jpeg';
 import './App.css';
 
 class App extends React.Component {
@@ -67,7 +67,7 @@ render(){
 var chooseText = !this.state.showhours && !this.state.showForm ? " Choose your date (pun intended) ;)" : "";
 
 var buttons = this.state.courses.map(
-  (name,x)=><Button key={x} className='m-3'  onClick={()=>this.setState({show:true,courseName:name})}>{name}</Button>)
+  (name,x)=><a href="#" class="myButton" key={x}   onClick={()=>this.setState({show:true,courseName:name})}>{name}</a>)
 
   const x = this.state.show?  <main>
     <h5 className="choice-text">{chooseText}</h5>

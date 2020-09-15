@@ -30,18 +30,20 @@
 
 .react-calendar {
   width: 720px;
-  max-width: 100%;
   background: rgb(199, 166, 243);
+  max-width:360%;
   border: 1px solid #a0a096;
   line-height: 1.500em;
 }
 .react-calendar__navigation {
   .react-calendar__navigation__arrow {
       display: none;
+      
   }
 
   .react-calendar__navigation__label {
       font-size: 32px;
+      
   }
 }
 
@@ -50,8 +52,13 @@
 }
 
 .react-calendar__month-view__weekdays__weekday {
-  font-size: 16px;
-  color: rgb(15, 70, 15);
+  font-size: 20px;
+  color: rgb(15, 19, 70);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:black;
 }
 
 .react-calendar__tile--active {
@@ -79,6 +86,7 @@
 .logo{
   height: 10%;
   width: 10%;
+  border-radius: 50%;
 }
 
 .choice-text{
@@ -87,9 +95,8 @@
 }
 
 .app{
-  height: 100vh;
-  background:rgb(219, 146, 146);
-  background-image: url(newim.jpeg);
+  min-height: 100vh;
+  background-image: url(backround.jpeg);
 
 }
 .styled-botton{
@@ -117,6 +124,33 @@
   height: 200px;
   border:  green;
 }
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+	background-color:#b8e356;
+	border-radius:6px;
+	border:1px solid #83c41a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #86ae47;
+  margin: 14px;
+
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+	background-color:#a5cc52;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 
 @keyframes App-logo-spin {
   from {
