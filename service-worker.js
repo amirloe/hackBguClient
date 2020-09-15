@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hackBguClient/precache-manifest.9f6652a8f431b522ce5e86ce5f265162.js"
+  "/hackBguClient/precache-manifest.fda03fea56c43ecd0749924965592655.js"
 );
 
 self.addEventListener('message', (event) => {

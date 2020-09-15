@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d7d3856841175e20b0f2819dc13944cd",
+    "revision": "9ab89f10aea6b27f2ffa2319fdec460b",
     "url": "/hackBguClient/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hackBguClient/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "b1cc29bbba9f692708d0",
+    "revision": "e825fe3c84a28ad6e51b",
     "url": "/hackBguClient/static/css/main.ea895e65.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hackBguClient/static/js/2.0ae67e57.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b1cc29bbba9f692708d0",
-    "url": "/hackBguClient/static/js/main.cd5ef8d9.chunk.js"
+    "revision": "e825fe3c84a28ad6e51b",
+    "url": "/hackBguClient/static/js/main.baef07e6.chunk.js"
   },
   {
     "revision": "973bf06556da2ca2788e",
