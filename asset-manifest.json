@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hackBguClient/static/css/main.ea895e65.chunk.css",
-    "main.js": "/hackBguClient/static/js/main.06bc3ed8.chunk.js",
-    "main.js.map": "/hackBguClient/static/js/main.06bc3ed8.chunk.js.map",
+    "main.js": "/hackBguClient/static/js/main.cd5ef8d9.chunk.js",
+    "main.js.map": "/hackBguClient/static/js/main.cd5ef8d9.chunk.js.map",
     "runtime-main.js": "/hackBguClient/static/js/runtime-main.9e045d65.js",
     "runtime-main.js.map": "/hackBguClient/static/js/runtime-main.9e045d65.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/hackBguClient/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.0ae67e57.chunk.js": "/hackBguClient/static/js/2.0ae67e57.chunk.js",
     "static/js/2.0ae67e57.chunk.js.map": "/hackBguClient/static/js/2.0ae67e57.chunk.js.map",
     "index.html": "/hackBguClient/index.html",
-    "precache-manifest.340029ffb1088271c559960f6eaa6561.js": "/hackBguClient/precache-manifest.340029ffb1088271c559960f6eaa6561.js",
+    "precache-manifest.9f6652a8f431b522ce5e86ce5f265162.js": "/hackBguClient/precache-manifest.9f6652a8f431b522ce5e86ce5f265162.js",
     "service-worker.js": "/hackBguClient/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/hackBguClient/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.ea895e65.chunk.css.map": "/hackBguClient/static/css/main.ea895e65.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.0ae67e57.chunk.js",
     "static/css/main.ea895e65.chunk.css",
-    "static/js/main.06bc3ed8.chunk.js"
+    "static/js/main.cd5ef8d9.chunk.js"
   ]
 }
